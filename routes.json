@@ -12,7 +12,7 @@
       "title": "销量看板",
       "icon": "ri-dashboard-line",
       "breadcrumb_hidden": false,
-      "hidden": false,
+      "hidden": true,
       "keep_alive": true,
       "affix": true
     }
@@ -250,7 +250,7 @@
           "title": "用户管理",
           "icon": "",
           "breadcrumb_hidden": false,
-          "hidden": false,
+          "hidden": true,
           "keep_alive": false,
           "affix": false
         }
@@ -268,7 +268,7 @@
           "title": "岗位管理",
           "icon": "",
           "breadcrumb_hidden": false,
-          "hidden": false,
+          "hidden": true,
           "keep_alive": false,
           "affix": false
         }
@@ -286,7 +286,7 @@
           "title": "菜单管理",
           "icon": "",
           "breadcrumb_hidden": false,
-          "hidden": false,
+          "hidden": true,
           "keep_alive": false,
           "affix": false
         }
@@ -342,7 +342,7 @@
       "title": "操作日志",
       "icon": "ri-file-list-2-line",
       "breadcrumb_hidden": false,
-      "hidden": false,
+      "hidden": true,
       "keep_alive": false,
       "affix": false
     }
