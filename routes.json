@@ -1,0 +1,350 @@
+[
+  {
+    "id": 1,
+    "pid": 0,
+    "sort": 100,
+    "path": "/dashboard",
+    "name": "Dashboard",
+    "component": "dashboard/index.vue",
+    "permission": null,
+    "meta": {
+      "type": "MENU",
+      "title": "销量看板",
+      "icon": "ri-dashboard-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": true,
+      "affix": true
+    }
+  },
+  {
+    "id": 2,
+    "pid": 0,
+    "sort": 99,
+    "path": "/listing",
+    "name": "Listing",
+    "component": "listing/index.vue",
+    "permission": null,
+    "meta": {
+      "type": "MENU",
+      "title": "上架看板",
+      "icon": "ri-drag-drop-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": true,
+      "affix": true
+    }
+  },
+  {
+    "id": 55,
+    "pid": 0,
+    "sort": 96,
+    "path": "/order",
+    "name": "Order",
+    "component": null,
+    "permission": null,
+    "meta": {
+      "type": "CATA",
+      "title": "订单管理",
+      "icon": "ri-todo-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": false,
+      "affix": false
+    },
+    "children": [
+      {
+        "id": 56,
+        "pid": 55,
+        "sort": 30,
+        "path": "/order/walmart",
+        "name": "OrderWalmart",
+        "component": "order/walmart/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "沃尔玛订单",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": true,
+          "affix": false
+        }
+      },
+      {
+        "id": 57,
+        "pid": 55,
+        "sort": 5,
+        "path": "/order/tiktok",
+        "name": "OrderTiktok",
+        "component": "order/tiktok/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "Tiktok订单",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": true,
+          "affix": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "pid": 0,
+    "sort": 91,
+    "path": "/refund",
+    "name": "Refund",
+    "component": null,
+    "permission": null,
+    "meta": {
+      "type": "CATA",
+      "title": "退货看板",
+      "icon": "ri-refund-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": false,
+      "affix": false
+    },
+    "children": [
+      {
+        "id": 8,
+        "pid": 7,
+        "sort": 5,
+        "path": "/refund/walmart",
+        "name": "RefundWalmart",
+        "component": "refund/walmart/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "沃尔玛",
+          "icon": null,
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 9,
+        "pid": 7,
+        "sort": 4,
+        "path": "/refund/tiktok",
+        "name": "RefundTiktok",
+        "component": "refund/tiktok/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "Tiktok",
+          "icon": null,
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "pid": 0,
+    "sort": 90,
+    "path": "/product",
+    "name": "Product",
+    "component": null,
+    "permission": null,
+    "meta": {
+      "type": "CATA",
+      "title": "产品管理",
+      "icon": "ri-shopping-cart-2-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": false,
+      "affix": false
+    },
+    "children": [
+      {
+        "id": 7,
+        "pid": 6,
+        "sort": 5,
+        "path": "/product/local",
+        "name": "ProductLocal",
+        "component": "product/local/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "本地产品库",
+          "icon": null,
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 10,
+        "pid": 6,
+        "sort": 2,
+        "path": "/product/walmart",
+        "name": "ProductWalmart",
+        "component": "product/walmart/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "沃尔玛产品库",
+          "icon": null,
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 11,
+        "pid": 6,
+        "sort": 3,
+        "path": "/product/tiktok",
+        "name": "ProductTiktok",
+        "component": "product/tiktok/index.vue",
+        "permission": null,
+        "meta": {
+          "type": "MENU",
+          "title": "Tiktok产品库",
+          "icon": null,
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "pid": 0,
+    "sort": 55,
+    "path": "/system",
+    "name": "System",
+    "component": "",
+    "permission": "",
+    "meta": {
+      "type": "CATA",
+      "title": "系统管理",
+      "icon": "ri-settings-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": false,
+      "affix": false
+    },
+    "children": [
+      {
+        "id": 29,
+        "pid": 28,
+        "sort": 10,
+        "path": "/system/user",
+        "name": "SystemUser",
+        "component": "system/user/index.vue",
+        "permission": "",
+        "meta": {
+          "type": "MENU",
+          "title": "用户管理",
+          "icon": "",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 48,
+        "pid": 28,
+        "sort": 9,
+        "path": "/system/role",
+        "name": "SystemRole",
+        "component": "system/role/index.vue",
+        "permission": "",
+        "meta": {
+          "type": "MENU",
+          "title": "岗位管理",
+          "icon": "",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 49,
+        "pid": 28,
+        "sort": 7,
+        "path": "/system/router",
+        "name": "SystemRouter",
+        "component": "system/router/index.vue",
+        "permission": "",
+        "meta": {
+          "type": "MENU",
+          "title": "菜单管理",
+          "icon": "",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 31,
+        "pid": 28,
+        "sort": 6,
+        "path": "/system/walmartStore",
+        "name": "SystemWalmartStore",
+        "component": "system/walmartStore/index.vue",
+        "permission": "",
+        "meta": {
+          "type": "MENU",
+          "title": "沃尔玛-店铺",
+          "icon": "",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      },
+      {
+        "id": 37,
+        "pid": 28,
+        "sort": 5,
+        "path": "/system/tiktokStore",
+        "name": "SystemTiktokStore",
+        "component": "system/tiktokStore/index.vue",
+        "permission": "",
+        "meta": {
+          "type": "MENU",
+          "title": "Tiktok-店铺",
+          "icon": "",
+          "breadcrumb_hidden": false,
+          "hidden": false,
+          "keep_alive": false,
+          "affix": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "pid": 0,
+    "sort": 50,
+    "path": "/handleLogs",
+    "name": "HandleLogs",
+    "component": "handleLogs/index.vue",
+    "permission": null,
+    "meta": {
+      "type": "MENU",
+      "title": "操作日志",
+      "icon": "ri-file-list-2-line",
+      "breadcrumb_hidden": false,
+      "hidden": false,
+      "keep_alive": false,
+      "affix": false
+    }
+  }
+]
