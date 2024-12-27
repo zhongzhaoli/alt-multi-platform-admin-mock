@@ -14,7 +14,7 @@
       "breadcrumb_hidden": false,
       "hidden": true,
       "keep_alive": true,
-      "affix": true
+      "affix": false
     }
   },
   {
@@ -250,7 +250,7 @@
           "title": "用户管理",
           "icon": "",
           "breadcrumb_hidden": false,
-          "hidden": true,
+          "hidden": false,
           "keep_alive": false,
           "affix": false
         }
@@ -268,7 +268,7 @@
           "title": "岗位管理",
           "icon": "",
           "breadcrumb_hidden": false,
-          "hidden": true,
+          "hidden": false,
           "keep_alive": false,
           "affix": false
         }
@@ -286,7 +286,7 @@
           "title": "菜单管理",
           "icon": "",
           "breadcrumb_hidden": false,
-          "hidden": true,
+          "hidden": false,
           "keep_alive": false,
           "affix": false
         }
