@@ -6,15 +6,15 @@ const router = express.Router();
 
 // 登录接口
 router.post('/login', (req, res) => {
-  const { user_name, user_passwd } = req.body;
+  const { username, password } = req.body;
 
   // 验证用户名和密码
-  if (user_name !== USER_NAME || user_passwd !== PASSWORD) {
+  if (username !== USER_NAME || password !== PASSWORD) {
     return res.json(responseJson(null, '用户名或密码错误', 400));
   }
 
   // 返回成功响应
-  return res.json(responseJson({ token: USER_TOKEN }, '登录成功', 200));
+  return res.json(responseJson(USER_TOKEN, '登录成功', 200));
 });
 
 // 退出登录接口
@@ -29,7 +29,7 @@ router.get('/me', (req, res) => {
       {
         user_id: mock('@uuid'),
         role_id: mock('@uuid'),
-        user_name: 'ALT-' + mock('@integer(100, 999)') + '-' + mock('@cname'),
+        username: 'ALT-' + mock('@integer(100, 999)') + '-' + mock('@cname'),
         role_name: mock('@pick(["管理员", "前端工程师", "后端工程师"])'),
         authorization: USER_TOKEN,
       },
@@ -46,7 +46,7 @@ router.get('/list', (req, res) => {
     responseJson(
       {
         total: 100,
-        data: mock({
+        list: mock({
           [`list|${pageSize || 20}`]: [
             {
               id: '@increment(1)',

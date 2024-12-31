@@ -7,10 +7,6 @@ router.get('/list/user/access/tree', (req, res) => {
   return res.json(responseJson({ data: routes }, '获取用户权限树成功', 200));
 });
 
-router.get('/list/tree', (req, res) => {
-  return res.json(responseJson(routes, '获取权限树成功', 200));
-});
-
 router.get('/id/list/role/access', (req, res) => {
   if ('role_id' in req.query) {
     return res.json(

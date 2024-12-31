@@ -1,6 +1,7 @@
 const express = require('express');
 const { responseJson } = require('../utils/response');
 const { mock } = require('mockjs');
+const routes = require('../routes.json');
 const router = express.Router();
 
 router.get('/list', (req, res) => {
@@ -28,6 +29,10 @@ router.get('/list', (req, res) => {
       200
     )
   );
+});
+
+router.get('/router/tree', (req, res) => {
+  return res.json(responseJson(routes, '获取权限树成功', 200));
 });
 
 module.exports = router;

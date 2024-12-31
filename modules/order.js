@@ -44,7 +44,7 @@ router.get('/walmart/list', (req, res) => {
     responseJson(
       {
         total: 100,
-        data: walmartList(pageSize),
+        list: walmartList(pageSize),
       },
       '获取沃尔玛列表成功',
       200
