@@ -130,7 +130,7 @@ router.get('/tiktok/list', (req, res) => {
     responseJson(
       {
         total: 100,
-        data: getTiktokList(pageSize),
+        list: getTiktokList(pageSize),
       },
       '获取列表成功',
       200

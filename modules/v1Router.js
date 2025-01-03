@@ -17,7 +17,6 @@ router.use('/', (req, res, next) => {
   if (WHITE_LIST.includes(req.path)) {
     next();
   } else {
-    console.log(req.headers);
     if ('authorization' in req.headers) {
       setTimeout(() => {
         next();
