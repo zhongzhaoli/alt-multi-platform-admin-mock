@@ -89,6 +89,7 @@ router.get('/data', (req, res) => {
     responseJson(
       {
         list: generateData(dateRanges.length),
+        history: generateData(dateRanges.length),
         date_range: dateRanges,
       },
       'success',
