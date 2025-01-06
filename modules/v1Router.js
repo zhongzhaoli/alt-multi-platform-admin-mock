@@ -10,6 +10,7 @@ const systemRouter = require('./system');
 const walmartShopRouter = require('./walmartShop');
 const tiktokShopRouter = require('./tiktokShop');
 const roleRouter = require('./role');
+const dashboardRouter = require('./dashboard');
 const { WHITE_LIST, USER_TOKEN } = require('../constant/user');
 
 // 鉴权中间件
@@ -34,6 +35,7 @@ router.use('/listing', listingRouter);
 router.use('/order', orderRouter);
 router.use('/refund', refundRouter);
 router.use('/product', productRouter);
+router.use('/dashboard', dashboardRouter);
 
 // 店铺列表
 router.use('/walmart/shop', walmartShopRouter);
