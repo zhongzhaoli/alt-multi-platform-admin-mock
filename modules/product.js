@@ -32,8 +32,7 @@ Mock.Random.extend({
     return this.pick(countryCodes);
   },
 });
-
-const getLocalProductList = (pageSize = 20) => {
+const getChildLocalProductList = (pageSize = 20) => {
   return Mock.mock({
     [`list|${pageSize || 20}`]: [
       {
@@ -49,6 +48,20 @@ const getLocalProductList = (pageSize = 20) => {
         sellerCountry: '@countryCode',
         deliveryMethod: '@boolean',
         deliveryTime: '@boolean',
+      },
+    ],
+  }).list;
+};
+
+const getLocalProductList = (pageSize = 20) => {
+  return Mock.mock({
+    [`list|${pageSize || 20}`]: [
+      {
+        id: '@increment(1)',
+        pasin: '@name(4, 9)-@name(4,9)',
+        brand: () => Mock.Random.name(),
+        shop_name: '星乘-@cword(1, 4)',
+        children: getChildLocalProductList(2),
       },
     ],
   }).list;
