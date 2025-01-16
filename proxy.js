@@ -4,6 +4,8 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const port = 3333;
 const app = express();
+// 跨域
+app.use(cors());
 
 // 设置代理中间件
 app.use(
@@ -34,6 +36,15 @@ app.use(
   '/proxy/log',
   createProxyMiddleware({
     target: 'http://192.168.3.7:8013',
+    changeOrigin: true,
+    followRedirects: true, // 自动跟随重定向
+  })
+);
+
+app.use(
+  '/proxy/api/user/test',
+  createProxyMiddleware({
+    target: 'https://api.dadeszxz.cn/api/user/test',
     changeOrigin: true,
     followRedirects: true, // 自动跟随重定向
   })
